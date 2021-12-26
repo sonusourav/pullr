@@ -9,3 +9,11 @@
 /build
 /captures
 .externalNativeBuild
+/.idea/assetWizardSettings.xml
+/.idea/compiler.xml
+/.idea/encodings.xml
+/.idea/gradle.xml
+/.idea/jarRepositories.xml
+/.idea/codeStyles/Project.xml
+/.idea/runConfigurations.xml
+/.idea/vcs.xml
