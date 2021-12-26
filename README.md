@@ -1,3 +1,7 @@
+
+### Pullr
+Android app to fetch closed pull request of any public repo
+
 ### 🌟 Features
 *   Complete code is written in Kotlin
 *   MVVM Architecture
