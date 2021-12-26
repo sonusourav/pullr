@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Pullr</string>
+    <string name="hint_username">Enter user name</string>
+    <string name="err_search">Something went wrong</string>
+    <string name="enter_your_github_username">Enter your github username.</string>
+    <string name="next">Next</string>
+    <string name="continue_msg">Continue</string>
+    <string name="info_valid_username">please enter valid username.</string>
+    <string name="info_no_repositories">No Repositories for this user.</string>
+    <string name="info_no_pr_found">No Pull requests find for this repositories.</string>
+    <string name="label_by">by</string>
+    <string name="my_github_username">sonusourav</string>
+    <string name="info_pull_requests">Pull Requests</string>
+    <string name="repositories">Repositories</string>
+</resources>

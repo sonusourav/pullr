@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/margin_small">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/pr_user_image"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_margin="@dimen/margin_small"
+            android:contentDescription="user_image"
+            android:src="@drawable/ic_stars"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/pr_username"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorPrimary"
+            android:layout_marginStart="@dimen/margin_small"
+            android:textSize="16sp"
+            app:layout_constraintLeft_toRightOf="@id/pr_user_image"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="@id/pr_user_image"
+            tools:text="sonusourav" />
+
+        <TextView
+            android:id="@+id/pr_number"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/margin_small"
+            android:maxLines="1"
+            app:layout_constraintBottom_toBottomOf="@id/pr_user_image"
+            app:layout_constraintLeft_toLeftOf="@id/pr_username"
+            app:layout_constraintRight_toRightOf="parent"
+            tools:text=" #12345" />
+
+        <TextView
+            android:id="@+id/pr_title"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin_small"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/pr_user_image"
+            tools:text=" New Pull Request to fix this issue" />
+
+        <ImageView
+            android:id="@+id/created_on_image"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_margin="@dimen/margin_small"
+            android:contentDescription="created_on"
+            android:src="@drawable/ic_created"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/pr_title" />
+
+        <TextView
+            android:id="@+id/created_on_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_small"
+            app:layout_constraintBottom_toBottomOf="@id/created_on_image"
+            app:layout_constraintLeft_toRightOf="@id/created_on_image"
+            app:layout_constraintTop_toTopOf="@id/created_on_image"
+            tools:text="1400" />
+
+        <ImageView
+            android:id="@+id/closed_on_image"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_margin="@dimen/margin_small"
+            android:contentDescription="closed_on"
+            android:src="@drawable/ic_closed_on"
+            app:layout_constraintBottom_toBottomOf="@id/created_on_image"
+            app:layout_constraintHorizontal_chainStyle="packed"
+            app:layout_constraintRight_toLeftOf="@id/closed_on_textview"
+            app:layout_constraintTop_toTopOf="@id/created_on_image" />
+
+        <TextView
+            android:id="@+id/closed_on_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/margin_small"
+            app:layout_constraintBottom_toBottomOf="@id/closed_on_image"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="@id/created_on_image"
+            tools:text="1400" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>
